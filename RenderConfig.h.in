@@ -1,0 +1,3 @@
+// the configured options and settings for 3dGraphics
+#define Render_VERSION_MAJOR @Render_VERSION_MAJOR@
+#define Render_VERSION_MINOR @Render_VERSION_MINOR@

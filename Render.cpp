@@ -1,8 +1,15 @@
+#include <iostream>
 #include <vector>
 #include <cmath>
 #include "tgaimage.h"
 #include "model.h"
 #include "geometry.h"
+//#include "RenderConfig.h"
+
+// Report Version
+// std::cout << argv[0] 	<< " Version " << Tutorial_VERSION_MAJOR << "."
+//               		<< Tutorial_VERSION_MINOR << std::endl;
+// TODO std::cout << "Usage: "
 
 const TGAColor white = TGAColor(255, 255, 255, 255);
 const TGAColor red   = TGAColor(255, 0,   0,   255);
