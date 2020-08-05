@@ -1,0 +1,10 @@
+3dGraphics.sln
+*.vcx*
+*.o
+*.exe
+*.cmake
+*.out
+obj
+CMakeFiles
+*.tga
+CMakeCache.txt
