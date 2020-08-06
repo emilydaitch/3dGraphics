@@ -143,6 +143,32 @@ Render/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/build
 .PHONY : Render/fast
 
+#=============================================================================
+# Target rules for targets named tgaimage
+
+# Build rule for target.
+tgaimage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgaimage
+.PHONY : tgaimage
+
+# fast build rule for target.
+tgaimage/fast:
+	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/tgaimage.dir/build.make libs/CMakeFiles/tgaimage.dir/build
+.PHONY : tgaimage/fast
+
+#=============================================================================
+# Target rules for targets named model
+
+# Build rule for target.
+model: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model
+.PHONY : model
+
+# fast build rule for target.
+model/fast:
+	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/model.dir/build.make libs/CMakeFiles/model.dir/build
+.PHONY : model/fast
+
 Render.obj: Render.cpp.obj
 
 .PHONY : Render.obj
@@ -179,6 +205,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Render"
+	@echo "... model"
+	@echo "... tgaimage"
 	@echo "... Render.obj"
 	@echo "... Render.i"
 	@echo "... Render.s"
