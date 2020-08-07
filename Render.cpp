@@ -44,7 +44,7 @@ int main(int argc, char** argv) {
     if (2==argc) {
         model = new Model(argv[1]);
     } else {
-        model = new Model("obj/african_head.obj");
+        model = new Model("../obj/african_head.obj");
     }
 
     TGAImage image(width, height, TGAImage::RGB);
