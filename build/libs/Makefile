@@ -130,90 +130,6 @@ depend:
 	cd /C/Users/User/3dGraphics/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-libs/CMakeFiles/tgaimage.dir/rule:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/CMakeFiles/tgaimage.dir/rule
-.PHONY : libs/CMakeFiles/tgaimage.dir/rule
-
-# Convenience name for target.
-tgaimage: libs/CMakeFiles/tgaimage.dir/rule
-
-.PHONY : tgaimage
-
-# fast build rule for target.
-tgaimage/fast:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/tgaimage.dir/build.make libs/CMakeFiles/tgaimage.dir/build
-.PHONY : tgaimage/fast
-
-# Convenience name for target.
-libs/CMakeFiles/model.dir/rule:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/CMakeFiles/model.dir/rule
-.PHONY : libs/CMakeFiles/model.dir/rule
-
-# Convenience name for target.
-model: libs/CMakeFiles/model.dir/rule
-
-.PHONY : model
-
-# fast build rule for target.
-model/fast:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/model.dir/build.make libs/CMakeFiles/model.dir/build
-.PHONY : model/fast
-
-model.obj: model.cpp.obj
-
-.PHONY : model.obj
-
-# target to build an object file
-model.cpp.obj:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/model.dir/build.make libs/CMakeFiles/model.dir/model.cpp.obj
-.PHONY : model.cpp.obj
-
-model.i: model.cpp.i
-
-.PHONY : model.i
-
-# target to preprocess a source file
-model.cpp.i:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/model.dir/build.make libs/CMakeFiles/model.dir/model.cpp.i
-.PHONY : model.cpp.i
-
-model.s: model.cpp.s
-
-.PHONY : model.s
-
-# target to generate assembly for a file
-model.cpp.s:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/model.dir/build.make libs/CMakeFiles/model.dir/model.cpp.s
-.PHONY : model.cpp.s
-
-tgaimage.obj: tgaimage.cpp.obj
-
-.PHONY : tgaimage.obj
-
-# target to build an object file
-tgaimage.cpp.obj:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/tgaimage.dir/build.make libs/CMakeFiles/tgaimage.dir/tgaimage.cpp.obj
-.PHONY : tgaimage.cpp.obj
-
-tgaimage.i: tgaimage.cpp.i
-
-.PHONY : tgaimage.i
-
-# target to preprocess a source file
-tgaimage.cpp.i:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/tgaimage.dir/build.make libs/CMakeFiles/tgaimage.dir/tgaimage.cpp.i
-.PHONY : tgaimage.cpp.i
-
-tgaimage.s: tgaimage.cpp.s
-
-.PHONY : tgaimage.s
-
-# target to generate assembly for a file
-tgaimage.cpp.s:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/tgaimage.dir/build.make libs/CMakeFiles/tgaimage.dir/tgaimage.cpp.s
-.PHONY : tgaimage.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,14 +138,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... model"
-	@echo "... tgaimage"
-	@echo "... model.obj"
-	@echo "... model.i"
-	@echo "... model.s"
-	@echo "... tgaimage.obj"
-	@echo "... tgaimage.i"
-	@echo "... tgaimage.s"
 .PHONY : help
 
 

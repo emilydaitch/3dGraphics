@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /C/Users/User/3dGraphics/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/C/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -98,16 +87,27 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"/C/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /C/Users/User/3dGraphics/build/CMakeFiles /C/Users/User/3dGraphics/build/CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /C/Users/User/3dGraphics/build && $(CMAKE_COMMAND) -E cmake_progress_start /C/Users/User/3dGraphics/build/CMakeFiles /C/Users/User/3dGraphics/build/libs/formats/CMakeFiles/progress.marks
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/formats/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /C/Users/User/3dGraphics/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/formats/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,84 +117,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/formats/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/formats/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /C/Users/User/3dGraphics/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Render
+# Convenience name for target.
+libs/formats/CMakeFiles/tgaimage.dir/rule:
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/formats/CMakeFiles/tgaimage.dir/rule
+.PHONY : libs/formats/CMakeFiles/tgaimage.dir/rule
 
-# Build rule for target.
-Render: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Render
-.PHONY : Render
+# Convenience name for target.
+tgaimage: libs/formats/CMakeFiles/tgaimage.dir/rule
 
-# fast build rule for target.
-Render/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/build
-.PHONY : Render/fast
-
-#=============================================================================
-# Target rules for targets named tgaimage
-
-# Build rule for target.
-tgaimage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgaimage
 .PHONY : tgaimage
 
 # fast build rule for target.
 tgaimage/fast:
-	$(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/build
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/build
 .PHONY : tgaimage/fast
 
-#=============================================================================
-# Target rules for targets named model
+tgaimage.obj: tgaimage.cpp.obj
 
-# Build rule for target.
-model: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model
-.PHONY : model
-
-# fast build rule for target.
-model/fast:
-	$(MAKE) $(MAKESILENT) -f libs/model/CMakeFiles/model.dir/build.make libs/model/CMakeFiles/model.dir/build
-.PHONY : model/fast
-
-Render.obj: Render.cpp.obj
-
-.PHONY : Render.obj
+.PHONY : tgaimage.obj
 
 # target to build an object file
-Render.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/Render.cpp.obj
-.PHONY : Render.cpp.obj
+tgaimage.cpp.obj:
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/tgaimage.cpp.obj
+.PHONY : tgaimage.cpp.obj
 
-Render.i: Render.cpp.i
+tgaimage.i: tgaimage.cpp.i
 
-.PHONY : Render.i
+.PHONY : tgaimage.i
 
 # target to preprocess a source file
-Render.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/Render.cpp.i
-.PHONY : Render.cpp.i
+tgaimage.cpp.i:
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/tgaimage.cpp.i
+.PHONY : tgaimage.cpp.i
 
-Render.s: Render.cpp.s
+tgaimage.s: tgaimage.cpp.s
 
-.PHONY : Render.s
+.PHONY : tgaimage.s
 
 # target to generate assembly for a file
-Render.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/Render.cpp.s
-.PHONY : Render.cpp.s
+tgaimage.cpp.s:
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/tgaimage.cpp.s
+.PHONY : tgaimage.cpp.s
 
 # Help Target
 help:
@@ -204,12 +180,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Render"
-	@echo "... model"
 	@echo "... tgaimage"
-	@echo "... Render.obj"
-	@echo "... Render.i"
-	@echo "... Render.s"
+	@echo "... tgaimage.obj"
+	@echo "... tgaimage.i"
+	@echo "... tgaimage.s"
 .PHONY : help
 
 
@@ -221,6 +195,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /C/Users/User/3dGraphics/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
