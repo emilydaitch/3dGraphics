@@ -1,2 +1,2 @@
-add_library(tgaimage tgaimage.cpp)
-add_library(model model.cpp)
+add_subdirectory(formats)
+add_subdirectory(model)

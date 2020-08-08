@@ -2,7 +2,7 @@
 #define __MODEL_H__
 
 #include <vector>
-#include "../geometry.h"
+#include "geometry.h"
 
 class Model {
 private:
