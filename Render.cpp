@@ -2,9 +2,9 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#include "formats/tgaimage.h"
-#include "model/model.h"
-#include "model/geometry.h"
+#include <formats/include/tgaimage.h>
+#include <model/model.h>
+#include <model/geometry.h>
 //#include "RenderConfig.h"
 
 // Report Version

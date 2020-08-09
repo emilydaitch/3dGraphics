@@ -1,6 +1,7 @@
 3dGraphics.sln
 *.vcx*
 *.o
+*.a
 *.exe
 *.cmake
 *.out

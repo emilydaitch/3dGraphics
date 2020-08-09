@@ -145,32 +145,32 @@ tgaimage/fast:
 	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/build
 .PHONY : tgaimage/fast
 
-tgaimage.obj: tgaimage.cpp.obj
+src/tgaimage.obj: src/tgaimage.cpp.obj
 
-.PHONY : tgaimage.obj
+.PHONY : src/tgaimage.obj
 
 # target to build an object file
-tgaimage.cpp.obj:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/tgaimage.cpp.obj
-.PHONY : tgaimage.cpp.obj
+src/tgaimage.cpp.obj:
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/src/tgaimage.cpp.obj
+.PHONY : src/tgaimage.cpp.obj
 
-tgaimage.i: tgaimage.cpp.i
+src/tgaimage.i: src/tgaimage.cpp.i
 
-.PHONY : tgaimage.i
+.PHONY : src/tgaimage.i
 
 # target to preprocess a source file
-tgaimage.cpp.i:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/tgaimage.cpp.i
-.PHONY : tgaimage.cpp.i
+src/tgaimage.cpp.i:
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/src/tgaimage.cpp.i
+.PHONY : src/tgaimage.cpp.i
 
-tgaimage.s: tgaimage.cpp.s
+src/tgaimage.s: src/tgaimage.cpp.s
 
-.PHONY : tgaimage.s
+.PHONY : src/tgaimage.s
 
 # target to generate assembly for a file
-tgaimage.cpp.s:
-	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/tgaimage.cpp.s
-.PHONY : tgaimage.cpp.s
+src/tgaimage.cpp.s:
+	cd /C/Users/User/3dGraphics/build && $(MAKE) $(MAKESILENT) -f libs/formats/CMakeFiles/tgaimage.dir/build.make libs/formats/CMakeFiles/tgaimage.dir/src/tgaimage.cpp.s
+.PHONY : src/tgaimage.cpp.s
 
 # Help Target
 help:
@@ -181,9 +181,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tgaimage"
-	@echo "... tgaimage.obj"
-	@echo "... tgaimage.i"
-	@echo "... tgaimage.s"
+	@echo "... src/tgaimage.obj"
+	@echo "... src/tgaimage.i"
+	@echo "... src/tgaimage.s"
 .PHONY : help
 
 
